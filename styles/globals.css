@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FAF6E3;
+}
+
+.navbar {
+  background-color: #2A3663 !important;
+  color: #FAF6E3;
+}
+
+.btn-login {
+  background-color: #2A3663;
+  padding: 10px 30px;
+  font-size: large;
+  font-weight: 500;
+  border: 2px solid #2A3663;
+
+}
+
+.btn-login:hover {
+  background-color: #FAF6E3;
+  color: #2A3663;
+}
+
+
+.vertical-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  position: relative;
+}
+
+.vertical-divider::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #848484;
+  z-index: 1;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn i.icon {
+  font-size: 20px;
+  font-style: normal;
+}
+
+/* Google button */
+.github {
+  background-color: #2f2e42;
+}
+
+.github:hover {
+  background-color: #22213a;
+}
+
+/* Google button */
+.google {
+  background-color: #db4437;
+}
+
+.google:hover {
+  background-color: #c23321;
+}
+
+
+/* Dashboard */
+.systems-op {
+  background-color: #D8DBBD;
+  width: 80%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #2A3663;
+}
+
+
+.card-empty {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  text-align: center;
+  color: #6c757d;
+}
+
+
+
+footer {
+  bottom: 0;
+  background-color: #B59F78;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
